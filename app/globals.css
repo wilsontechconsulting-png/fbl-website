@@ -27,3 +27,23 @@ body {
   outline: 2px solid #22C55E;
   outline-offset: 4px;
 }
+
+/* Subtle gradient backgrounds */
+.gradient-dark {
+  background: linear-gradient(135deg, #0F111E 0%, #1a1d2e 100%);
+}
+
+.gradient-light {
+  background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+}
+
+/* Pattern overlay */
+.pattern-dots {
+  background-image: radial-gradient(circle, rgba(34, 197, 94, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.2s ease;
+}
