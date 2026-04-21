@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FBL Website
 
-## Getting Started
+Fellowship of Business Leaders website - built with Next.js 16, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## Live Site
+
+🌐 **Production:** https://fbl-website-drab.vercel.app
+
+## Pages
+
+- **Homepage** - Core positioning, what FBL is/isn't, who it's for
+- **About** - Mission, vision, structure, why FBL exists
+- **Membership** - What's included, what's expected, investment details
+- **Chapters** - National chapter network, current cities, starting a chapter
+- **Apply** - Application process and membership information
+- **Privacy Policy** - Data handling and member confidentiality
+- **Terms of Service** - Membership terms and conditions
+
+## Brand Identity
+
+### Colors
+- **Midnight Blue:** `#0F111E` (primary dark)
+- **FBL Green:** `#22C55E` (accent, CTAs)
+- **Secondary Green:** `#16A34A` (hover states)
+
+### Typography
+- **Font:** Inter (system-ui fallback)
+- **Style:** Clean, professional, no-fluff
+
+### Design Philosophy
+- Grounded, not flashy
+- Professional, not corporate
+- Structured, not chaotic
+- Timeless, not trendy
+
+## Tech Stack
+
+- **Framework:** Next.js 16.2.4 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS (v4)
+- **Deployment:** Vercel (auto-deploy from `main` branch)
+- **Repository:** https://github.com/wilsontechconsulting-png/fbl-website
+
+## Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Deploy (auto via Vercel)
+git push origin main
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+All pushes to `main` branch automatically deploy to Vercel production.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Build time:** ~30 seconds  
+**Deploy URL:** https://fbl-website-drab.vercel.app
 
-## Learn More
+## Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+fbl-website/
+├── app/
+│   ├── about/page.tsx
+│   ├── apply/page.tsx
+│   ├── chapters/page.tsx
+│   ├── membership/page.tsx
+│   ├── privacy/page.tsx
+│   ├── terms/page.tsx
+│   ├── layout.tsx
+│   ├── page.tsx (homepage)
+│   └── globals.css
+├── components/
+│   ├── Header.tsx
+│   └── Footer.tsx
+└── public/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Email:** member@fblconnect.com
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Built by:** Maven (ProductiveBot AI)  
+**Completed:** April 21, 2026
